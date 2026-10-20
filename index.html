@@ -1,0 +1,2864 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYVEXORA DETAILING | Premium Auto Spa & Seramik Kaplama Stüdyosu</title>
+  <meta name="description"
+    content="Aracınıza hak ettiği kusursuz parlaklığı ve koruyucu zırhı kazandırın. 9H Seramik Kaplama, PPF Koruma, Boya Düzeltme, Buharlı Detaylı İç Temizlik ve Çiziksiz Premium Yıkama.">
+  <meta name="keywords"
+    content="oto yıkama, car wash, detailing, seramik kaplama, pasta cila, boya koruma, iç kuaför, ppf kaplama, ayvexora">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ==========================================================================
+       AYVEXORA PREMIUM DETAILING - LUXURY DESIGN SYSTEM
+       ========================================================================== */
+    :root {
+      --bg-dark: #08090c;
+      --bg-card: rgba(18, 21, 28, 0.75);
+      --bg-card-hover: rgba(26, 31, 42, 0.9);
+      --bg-glass: rgba(14, 17, 24, 0.65);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-gold: rgba(245, 178, 54, 0.25);
+      --border-gold-glow: rgba(245, 178, 54, 0.5);
+
+      /* Metallic Gold & Amber Palette */
+      --gold-primary: #e5a93c;
+      --gold-light: #fcd34d;
+      --gold-gradient: linear-gradient(135deg, #fce088 0%, #e5a93c 50%, #b87c14 100%);
+      --gold-gradient-soft: linear-gradient(135deg, rgba(245, 178, 54, 0.15) 0%, rgba(229, 169, 60, 0.03) 100%);
+
+      /* Electric Cyan Accent */
+      --cyan-accent: #00f0ff;
+      --cyan-gradient: linear-gradient(135deg, #00f0ff 0%, #0099ff 100%);
+
+      /* Typography & Neutral Colors */
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+      --white: #ffffff;
+
+      /* Shadows */
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+      --shadow-gold: 0 0 25px rgba(229, 169, 60, 0.25);
+      --shadow-cyan: 0 0 25px rgba(0, 240, 255, 0.2);
+
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+      --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Reset & Base Setup */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      selection-background-color: var(--gold-primary);
+      selection-color: #000;
+    }
+
+    ::selection {
+      background: var(--gold-primary);
+      color: #000;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: inherit;
+      outline: none;
+      border: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Global Ambient Background Lights */
+    .ambient-glow-1 {
+      position: fixed;
+      top: -10vw;
+      left: 15%;
+      width: 45vw;
+      height: 45vw;
+      background: radial-gradient(circle, rgba(229, 169, 60, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(60px);
+    }
+
+    .ambient-glow-2 {
+      position: fixed;
+      top: 50vh;
+      right: -10vw;
+      width: 40vw;
+      height: 40vw;
+      background: radial-gradient(circle, rgba(0, 240, 255, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(80px);
+    }
+
+    /* Grid Layout Container */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 100px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 60px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(229, 169, 60, 0.1);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-pill);
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--white);
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title .text-gold {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .btn-gold {
+      background: var(--gold-gradient);
+      color: #0b0c10;
+      box-shadow: 0 4px 20px rgba(229, 169, 60, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(229, 169, 60, 0.55);
+      filter: brightness(1.08);
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--white);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: var(--border-gold);
+      transform: translateY(-2px);
+      color: var(--gold-light);
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-whatsapp:hover {
+      background: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== */
+    .announcement-bar {
+      background: linear-gradient(90deg, #10131a 0%, #1a160c 50%, #10131a 100%);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 10px 0;
+      font-size: 0.85rem;
+      position: relative;
+      z-index: 100;
+    }
+
+    .announcement-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .announcement-text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-muted);
+    }
+
+    .announcement-badge {
+      background: rgba(229, 169, 60, 0.2);
+      color: var(--gold-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .social-quick-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .social-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .social-pill:hover {
+      color: var(--white);
+      border-color: var(--gold-primary);
+      background: rgba(229, 169, 60, 0.1);
+    }
+
+    .social-pill.instagram:hover {
+      border-color: #e1306c;
+      color: #ff588a;
+    }
+
+    .social-pill.tiktok:hover {
+      border-color: #00f0ff;
+      color: #00f0ff;
+    }
+
+    .social-pill.whatsapp:hover {
+      border-color: #25d366;
+      color: #25d366;
+    }
+
+    /* ==========================================================================
+       MAIN NAVIGATION
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(8, 9, 12, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--gold-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #08090c;
+      font-size: 1.3rem;
+      box-shadow: 0 0 20px rgba(229, 169, 60, 0.4);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--white);
+    }
+
+    .logo-name span {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo-sub {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--white);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--gold-gradient);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--white);
+      border: 1px solid var(--border-subtle);
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       HERO SECTION (LUXURY SHOWCASE)
+       ========================================================================== */
+    .hero {
+      padding: 60px 0 100px;
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 18px;
+      background: rgba(229, 169, 60, 0.08);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-pill);
+      color: var(--gold-light);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    .hero-pill i {
+      color: var(--gold-primary);
+    }
+
+    .hero-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 24px;
+      letter-spacing: -1px;
+    }
+
+    .hero-title span.gold {
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-description {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 580px;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 44px;
+    }
+
+    /* Social Showcase Icons */
+    .hero-social-strip {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .social-strip-label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .social-btn-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .social-circle-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .social-circle-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .social-circle-btn.ig:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4);
+    }
+
+    .social-circle-btn.tt:hover {
+      background: #000;
+      color: #00f0ff;
+      border-color: #00f0ff;
+      box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+    }
+
+    .social-circle-btn.wa:hover {
+      background: #25d366;
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    /* Hero Visual Card */
+    .hero-media-wrapper {
+      position: relative;
+      border-radius: var(--radius-lg);
+      padding: 8px;
+      background: linear-gradient(135deg, rgba(229, 169, 60, 0.3) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(0, 240, 255, 0.2) 100%);
+      box-shadow: var(--shadow-md), 0 0 40px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-media-inner {
+      position: relative;
+      border-radius: calc(var(--radius-lg) - 4px);
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #111;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .hero-media-wrapper:hover .hero-img {
+      transform: scale(1.03);
+    }
+
+    .floating-glass-card {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      padding: 16px 20px;
+      background: rgba(12, 14, 20, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .glass-card-info h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .glass-card-info p {
+      font-size: 0.8rem;
+      color: var(--gold-light);
+    }
+
+    .badge-certified {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--gold-gradient);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+    }
+
+    /* Stats Ribbon */
+    .stats-ribbon {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 30px 40px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .stat-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 0;
+      height: 70%;
+      width: 1px;
+      background: var(--border-subtle);
+    }
+
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       BEFORE / AFTER COMPARISON SLIDER SECTION
+       ========================================================================== */
+    .before-after-box {
+      max-width: 980px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-gold);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), var(--shadow-gold);
+      position: relative;
+      background: #111;
+      user-select: none;
+    }
+
+    .comparison-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      cursor: ew-resize;
+      --slider-pos: 50%;
+    }
+
+    .comparison-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .comparison-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: inset(0 calc(100% - var(--slider-pos, 50%)) 0 0);
+      pointer-events: none;
+    }
+
+    .slider-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: var(--slider-pos, 50%);
+      width: 3px;
+      background: var(--gold-primary);
+      box-shadow: 0 0 15px rgba(229, 169, 60, 0.8);
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 8;
+    }
+
+    .slider-handle {
+      position: absolute;
+      top: 50%;
+      left: var(--slider-pos, 50%);
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 1.1rem;
+      box-shadow: 0 0 25px rgba(229, 169, 60, 0.9);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .tag-before,
+    .tag-after {
+      position: absolute;
+      top: 20px;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      z-index: 5;
+      backdrop-filter: blur(10px);
+    }
+
+    .tag-before {
+      left: 20px;
+      background: rgba(220, 38, 38, 0.8);
+      color: #fff;
+      border: 1px solid rgba(220, 38, 38, 0.4);
+    }
+
+    .tag-after {
+      right: 20px;
+      background: rgba(16, 185, 129, 0.8);
+      color: #fff;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+    }
+
+    .slider-tip {
+      text-align: center;
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    /* ==========================================================================
+       SERVICES SECTION (HİZMETLERİMİZ)
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-gold);
+      background: var(--bg-card-hover);
+      box-shadow: var(--shadow-gold), 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .service-thumb {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+    }
+
+    .service-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .service-card:hover .service-thumb img {
+      transform: scale(1.08);
+    }
+
+    .service-badge-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(10, 12, 16, 0.85);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-light);
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      backdrop-filter: blur(10px);
+    }
+
+    .service-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .service-features li i {
+      color: var(--gold-primary);
+      font-size: 0.85rem;
+    }
+
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .service-price-tag {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold-light);
+    }
+
+    .service-price-tag span {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       PRICING & PACKAGE CALCULATOR
+       ========================================================================== */
+    .vehicle-selector-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .vehicle-tabs {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 6px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .vehicle-tab {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .vehicle-tab.active {
+      background: var(--gold-gradient);
+      color: #0b0c10;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(229, 169, 60, 0.4);
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .package-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .package-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--border-gold);
+    }
+
+    .package-card.featured {
+      border: 2px solid var(--gold-primary);
+      background: linear-gradient(180deg, rgba(30, 24, 12, 0.85) 0%, rgba(18, 21, 28, 0.85) 100%);
+      box-shadow: var(--shadow-gold), 0 15px 40px rgba(0, 0, 0, 0.8);
+      transform: scale(1.03);
+    }
+
+    .package-card.featured:hover {
+      transform: scale(1.05) translateY(-6px);
+    }
+
+    .package-ribbon {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold-gradient);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 16px;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(229, 169, 60, 0.4);
+    }
+
+    .package-header {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .package-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .package-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .package-price-box {
+      margin: 20px 0;
+      text-align: center;
+      padding: 16px 0;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .package-price {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--gold-light);
+    }
+
+    .package-duration {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .package-features {
+      list-style: none;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .package-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .package-features li i.fa-check {
+      color: #22c55e;
+      margin-top: 3px;
+    }
+
+    .package-features li i.fa-xmark {
+      color: #64748b;
+      margin-top: 3px;
+    }
+
+    .package-features li.disabled {
+      color: var(--text-dim);
+      text-decoration: line-through;
+    }
+
+    /* ==========================================================================
+       WHY US / ADVANTAGES
+       ========================================================================== */
+    .why-us-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .why-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .why-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-gold);
+      background: var(--bg-card-hover);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .why-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: var(--gold-gradient-soft);
+      border: 1px solid var(--border-gold);
+      color: var(--gold-primary);
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .why-card:hover .why-icon {
+      background: var(--gold-gradient);
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    .why-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .why-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       TESTIMONIALS (GOOGLE REVIEWS STYLE)
+       ========================================================================== */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .reviewer-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .reviewer-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #333, #555);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--white);
+      border: 2px solid var(--border-gold);
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      color: var(--white);
+      font-size: 0.95rem;
+    }
+
+    .reviewer-car {
+      font-size: 0.78rem;
+      color: var(--gold-light);
+    }
+
+    .stars {
+      color: #f59e0b;
+      font-size: 0.85rem;
+      display: flex;
+      gap: 3px;
+    }
+
+    .review-comment {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       APPOINTMENT & DIRECT WHATSAPP RESERVATION SYSTEM
+       ========================================================================== */
+    .booking-wrapper {
+      background: linear-gradient(135deg, rgba(20, 24, 32, 0.9) 0%, rgba(14, 16, 22, 0.95) 100%);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), var(--shadow-gold);
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .booking-info h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .booking-info p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .booking-perks {
+      list-style: none;
+      margin-bottom: 30px;
+    }
+
+    .booking-perks li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .booking-perks li i {
+      color: #22c55e;
+      font-size: 1.1rem;
+    }
+
+    .direct-contact-badge {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+    }
+
+    .contact-badge-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+    }
+
+    .contact-badge-text p {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .contact-badge-text strong {
+      font-size: 1.1rem;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+
+    /* Booking Form */
+    .booking-form {
+      background: rgba(10, 12, 16, 0.7);
+      padding: 36px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .form-control {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 12px 16px;
+      color: var(--white);
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 12px rgba(229, 169, 60, 0.3);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    select.form-control option {
+      background: #111318;
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       SOCIAL MEDIA COMMUNITY BANNER (INSTAGRAM & TIKTOK FOCUS)
+       ========================================================================== */
+    .social-banner {
+      background: linear-gradient(135deg, rgba(225, 48, 108, 0.1) 0%, rgba(0, 240, 255, 0.08) 50%, rgba(37, 211, 102, 0.08) 100%);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .social-banner-left {
+      max-width: 580px;
+    }
+
+    .social-banner-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .social-banner-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .social-banner-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(220, 39, 67, 0.35);
+    }
+
+    .btn-ig-gradient:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(220, 39, 67, 0.55);
+    }
+
+    .btn-tiktok-gradient {
+      background: #000;
+      border: 1px solid #00f0ff;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0, 240, 255, 0.25);
+    }
+
+    .btn-tiktok-gradient:hover {
+      background: #0d0f14;
+      border-color: #ff0055;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(255, 0, 85, 0.4);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background: #050608;
+      border-top: 1px solid var(--border-subtle);
+      padding: 80px 0 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin: 18px 0 24px;
+      max-width: 320px;
+    }
+
+    .footer-col h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 22px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--gold-gradient);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+      transform: translateX(4px);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-contact-item i {
+      color: var(--gold-primary);
+      margin-top: 4px;
+      font-size: 1rem;
+    }
+
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .developer-credit {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+    }
+
+    .developer-credit strong {
+      color: var(--gold-light);
+    }
+
+    /* ==========================================================================
+       FLOATING ACTION DOCK & WHATSAPP RADAR BUTTON
+       ========================================================================== */
+    .floating-action-dock {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .floating-social-bubble {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+    }
+
+    .floating-social-bubble:hover {
+      transform: scale(1.15) translateY(-2px);
+    }
+
+    .floating-social-bubble.ig {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    .floating-social-bubble.tt {
+      background: #000;
+      border: 1px solid #00f0ff;
+      color: #00f0ff;
+    }
+
+    .floating-whatsapp-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #25d366;
+      color: #ffffff;
+      padding: 12px 22px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+      position: relative;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp-btn:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.7);
+    }
+
+    .whatsapp-radar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius-pill);
+      border: 2px solid #25d366;
+      animation: radarPulse 2s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes radarPulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(1.25, 1.4);
+        opacity: 0;
+      }
+    }
+
+    /* Modal for Quick Booking */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #11141b;
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 540px;
+      padding: 36px;
+      position: relative;
+      box-shadow: var(--shadow-gold), 0 20px 50px rgba(0, 0, 0, 0.9);
+      animation: modalFade 0.3s ease;
+    }
+
+    @keyframes modalFade {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--white);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--gold-light);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-btns {
+        justify-content: center;
+      }
+
+      .hero-social-strip {
+        justify-content: center;
+      }
+
+      .services-grid,
+      .packages-grid,
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .booking-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .social-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .announcement-inner {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .stats-ribbon {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 24px;
+      }
+
+      .stat-item:nth-child(2)::after {
+        display: none;
+      }
+
+      .services-grid,
+      .packages-grid,
+      .reviews-grid,
+      .why-us-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .package-card.featured {
+        transform: none;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-action-dock {
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .floating-whatsapp-btn span {
+        display: none;
+      }
+
+      .floating-whatsapp-btn {
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Ambient Luxury Glow Lights -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Top Announcement Bar with Social Media Quick Links -->
+  <header class="announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="announcement-badge">VİP KAMPANYA</span>
+        <span>Bu Aya Özel: Tüm Seramik Kaplama & İç Detaylı Kuaförde <strong>%20 İndirim!</strong></span>
+      </div>
+      <div class="social-quick-links">
+        <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+          class="social-pill instagram" title="Instagram: @ayvexora.web">
+          <i class="fa-brands fa-instagram"></i>
+          <span>ayvexora.web</span>
+        </a>
+        <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+          class="social-pill tiktok" title="TikTok: @ayvexora.web">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>ayvexora.web</span>
+        </a>
+        <a href="https://wa.me/905060362862?text=Merhaba,%20oto%20y%C4%B1kama%20ve%20detailing%20i%C3%A7in%20bilgi%20ve%20randevu%20almak%20istiyorum."
+          target="_blank" rel="noopener noreferrer" class="social-pill whatsapp" title="WhatsApp: 05060362862">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>0506 036 28 62</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Premium Navigation Header -->
+  <nav class="header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="header-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">AYVEXORA <span>AUTO SPA</span></span>
+          <span class="logo-sub">PREMIUM DETAILING STUDIO</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+        <li><a href="#services" class="nav-link">Hizmetlerimiz</a></li>
+        <li><a href="#comparison" class="nav-link">Öncesi / Sonrası</a></li>
+        <li><a href="#packages" class="nav-link">Fiyat Paketleri</a></li>
+        <li><a href="#why-us" class="nav-link">Neden Biz?</a></li>
+        <li><a href="#testimonials" class="nav-link">Müşteri Yorumları</a></li>
+        <li><a href="#contact" class="nav-link">İletişim</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-gold" id="nav-booking-btn" onclick="openBookingModal('Genel Detailing Randevusu')">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Randevu Al</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Menüyü Aç">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>9H NANO SERAMİK & PROFESYONEL DETAILING</span>
+          </div>
+          <h1 class="hero-title">
+            Aracınız İçin <br>
+            <span class="gold">Kusursuz Parlaklık</span> & <br>
+            Zırh Gibi Koruma
+          </h1>
+          <p class="hero-description">
+            Çizik önleyici çift kova yıkama, ayna efektli boya düzeltme, 9H seramik kaplama ve antibakteriyel buharlı iç
+            kuaför ile aracınızı ilk günkü fabrika kondisyonuna taşıyoruz.
+          </p>
+          <div class="hero-btns">
+            <a href="https://wa.me/905060362862?text=Merhaba,%20web%20sitenizden%20ula%C5%9F%C4%B1yorum.%20Arac%C4%B1m%20i%C3%A7in%20detailing%20ve%20y%C4%B1kama%20fiyat%C4%B1%20almak%20istiyorum."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="hero-wa-btn">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+              <span>WhatsApp Hızlı Randevu</span>
+            </a>
+            <a href="#packages" class="btn btn-glass" id="hero-packages-btn">
+              <i class="fa-solid fa-tag"></i>
+              <span>Paketleri İncele</span>
+            </a>
+          </div>
+
+          <div class="hero-social-strip">
+            <span class="social-strip-label">Sosyal Medya & İletişim:</span>
+            <div class="social-btn-group">
+              <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+                class="social-circle-btn ig" title="Instagram Takip Et: ayvexora.web">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+                class="social-circle-btn tt" title="TikTok Takip Et: ayvexora.web">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="https://wa.me/905060362862" target="_blank" rel="noopener noreferrer"
+                class="social-circle-btn wa" title="WhatsApp Mesaj Gönder: 0506 036 28 62">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="tel:05060362862" class="social-circle-btn" title="Hemen Ara: 0506 036 28 62">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Presentation -->
+        <div class="hero-visual">
+          <div class="hero-media-wrapper">
+            <div class="hero-media-inner">
+              <img src="images/hero-studio.jpg" alt="Ayvexora Luxury Detailing Studio" class="hero-img"
+                onerror="this.src='https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1600&q=85'">
+            </div>
+            <div class="floating-glass-card">
+              <div class="glass-card-info">
+                <h4>Ayvexora Master Detailing Lab</h4>
+                <p><i class="fa-solid fa-droplet"></i> Gyeon & Koch-Chemie Sertifikalı Ürünler</p>
+              </div>
+              <div class="badge-certified">
+                <i class="fa-solid fa-award"></i>
+                <span>VIP Kalite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Experience Stats Ribbon -->
+      <div class="stats-ribbon">
+        <div class="stat-item">
+          <div class="stat-num" id="stat-cars">12.500+</div>
+          <div class="stat-label">Yıkanan & Detaylandırılan Araç</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-satisfaction">%100</div>
+          <div class="stat-label">Müşteri Memnuniyet Garantisi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-protection">9H+</div>
+          <div class="stat-label">Nano Seramik Dayanıklılığı</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="stat-experience">8+ Yıl</div>
+          <div class="stat-label">Sektörel Uzmanlık & Deneyim</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before & After Detailing Comparison Slider -->
+  <section id="comparison" style="background: rgba(14, 17, 24, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> GÖZLERİNİZE İNANAMAYACAKSINIZ</div>
+        <h2 class="section-title">Gerçek <span class="text-gold">Öncesi & Sonrası</span> Dönüşümü</h2>
+        <p class="section-desc">Kılcal çizikler, güneş yanıkları ve matlaşmış boyayı tek dokunuşla ayna parlaklığına
+          dönüştürüyoruz. İbreyi sağa sola kaydırarak farkı görün.</p>
+      </div>
+
+      <div class="before-after-box" id="comparison-box">
+        <div class="comparison-container" id="compare-container">
+          <!-- After (Clean / Polished Ceramic Coat) -->
+          <img src="images/hero-studio.jpg" alt="Uygulama Sonrası Parlaklık" class="comparison-img"
+            onerror="this.src='https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80'">
+          <span class="tag-after">SONRA: 9H SERAMİK PARLAKLIK</span>
+
+          <!-- Before (Swirl Scratched / Compounding) -->
+          <div class="comparison-overlay" id="compare-overlay">
+            <img src="images/paint-correction.jpg" alt="Uygulama Öncesi Çizikler" class="comparison-img"
+              onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=80'">
+            <span class="tag-before">ÖNCE: KILCAL ÇİZİK & MAT</span>
+          </div>
+
+          <!-- Handle & Divider Line -->
+          <div class="slider-divider" id="slider-divider"></div>
+          <div class="slider-handle" id="slider-handle">
+            <i class="fa-solid fa-arrows-left-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="slider-tip">
+        <i class="fa-solid fa-hand-pointer"></i>
+        <span>Kaydırıcıyı parmağınızla veya farenizle sağa/sola sürükleyin</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-spray-can-sparkles"></i> PROFESYONEL ÇÖZÜMLER</div>
+        <h2 class="section-title">Ayrıcalıklı <span class="text-gold">Detailing & Bakım</span> Hizmetlerimiz</h2>
+        <p class="section-desc">Aracınızın kaportasından en ince havalandırma ızgaralarına kadar titizlikle uygulanan
+          üst düzey hizmetlerimiz.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Köpüklü Yıkama -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/foam-wash.jpg" alt="Aktif Kar Köpüğü Yıkama"
+              onerror="this.src='https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">pH Nötr & Temassız</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Aktif Kar Köpüklü VIP Yıkama</h3>
+            <p class="service-desc">Çizik önleyici çift kova ve grit guard ızgara sistemi. pH nötr şampuan, jant demir
+              tozu arındırma ve mikrofiber kurulama.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> Çiziksiz Çift Kova Metodu</li>
+              <li><i class="fa-solid fa-check-circle"></i> Jant & Davlumbaz Detaylı Temizliği</li>
+              <li><i class="fa-solid fa-check-circle"></i> Lastik Parlatıcı & UV Koruyucu</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">350 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-glass" onclick="openBookingModal('Aktif Kar Köpüklü VIP Yıkama')">Randevu
+                Al</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Seramik Kaplama -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/ceramic-beading.jpg" alt="9H Nano Seramik Kaplama"
+              onerror="this.src='https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">3-5 Yıl Garanti</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">9H Nano Seramik Kaplama</h3>
+            <p class="service-desc">Aracınızın boyasına sıvı cam zırhı kazandırın. Su itici hidrofobik etki, derin ıslak
+              ayna parlaklığı ve reçine/asit yağmuru kalkanı.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> 9H Sertlik Dereceli Sıvı Cam Katmanı</li>
+              <li><i class="fa-solid fa-check-circle"></i> Maksimum Su & Çamur İticilik</li>
+              <li><i class="fa-solid fa-check-circle"></i> Güneş & UV Işını Solma Koruması</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">6.500 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-gold" onclick="openBookingModal('9H Nano Seramik Kaplama')">Hemen Seç</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: İç Kuaför -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/interior-detailing.jpg" alt="Buharlı Detaylı İç Kuaför"
+              onerror="this.src='https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">%99.9 Hijyen</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Buharlı Detaylı İç Kuaför</h3>
+            <p class="service-desc">Koltuk, tavan, taban halısı ve bagajın sıcak buharla derinlemesine yıkanması, deri
+              koltuk besleme ve ozon sterilizasyonu.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> 140°C Buharlı Koltuk & Tavan Yıkama</li>
+              <li><i class="fa-solid fa-check-circle"></i> Deri Koruma & Mat Besleyici Bakım</li>
+              <li><i class="fa-solid fa-check-circle"></i> Kötü Koku & Bakteri Yok Edici Ozon</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">2.200 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-glass" onclick="openBookingModal('Buharlı Detaylı İç Kuaför')">Randevu Al</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Boya Düzeltme -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/paint-correction.jpg" alt="Boya Düzeltme & Çizik Giderme"
+              onerror="this.src='https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">Ayna Efekti</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Boya Düzeltme & Çizik Giderme</h3>
+            <p class="service-desc">Çok aşamalı orbital polisaj ile kılcal çiziklerin, hologramların ve harelerin %95
+              oranında tamamen yok edilmesi.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> Kalın & İnce Çizik Kesme Pastası</li>
+              <li><i class="fa-solid fa-check-circle"></i> Hare Giderici & Yüksek Cila Parlaklığı</li>
+              <li><i class="fa-solid fa-check-circle"></i> Mikron Ölçümlü Güvenli Uygulama</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">3.500 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-glass" onclick="openBookingModal('Boya Düzeltme & Çizik Giderme')">Randevu
+                Al</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: PPF Kaplama -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/hero-studio.jpg" alt="PPF Şeffaf Boya Koruma Filmi"
+              onerror="this.src='https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">Kendini Yenileyen TPU</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">PPF Şeffaf Boya Koruma Filmi</h3>
+            <p class="service-desc">Yoldan seken taş parçaları, sürtmeler ve çizilmelere karşı 200 mikron kalınlığında
+              ısı ile kendi kendini tamir eden zırh.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> Taş İzi & Sürtme Hasarını Engeller</li>
+              <li><i class="fa-solid fa-check-circle"></i> Güneş Isısında Kendini Yenileme</li>
+              <li><i class="fa-solid fa-check-circle"></i> Sararmaz & Solmaz Şeffaf TPU</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">12.000 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-glass" onclick="openBookingModal('PPF Şeffaf Boya Koruma')">Randevu Al</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: Motor Detaylandırma -->
+        <div class="service-card">
+          <div class="service-thumb">
+            <img src="images/foam-wash.jpg" alt="Buharlı Motor Temizleme"
+              onerror="this.src='https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80'">
+            <span class="service-badge-tag">Güvenli & Kuru Buhar</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Buharlı Motor Temizleme & Koruma</h3>
+            <p class="service-desc">Elektronik soketlere zarar vermeden dielektrik koruma eşliğinde kuru buharla yağ,
+              toz arındırma ve ısıya dayanıklı cila.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check-circle"></i> Elektronik Aksam Güvenliği</li>
+              <li><i class="fa-solid fa-check-circle"></i> Yağ & Katran Çözücü Özel Solüsyon</li>
+              <li><i class="fa-solid fa-check-circle"></i> Plastik ve Hortum Besleyici Cila</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-tag">750 ₺ <span>/ Başlayan</span></div>
+              <button class="btn btn-glass" onclick="openBookingModal('Buharlı Motor Temizleme & Koruma')">Randevu
+                Al</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Packages Section With Interactive Vehicle Type Switcher -->
+  <section id="packages" style="background: rgba(10, 12, 17, 0.6);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-coins"></i> ŞEFFAF & NET FİYATLANDIRMA</div>
+        <h2 class="section-title">Her İhtiyaca Uygun <span class="text-gold">Paketlerimiz</span></h2>
+        <p class="section-desc">Aracınızın kasa tipini seçin, size en uygun profesyonel bakım paketini anında
+          görüntüleyin.</p>
+      </div>
+
+      <!-- Vehicle Type Tabs -->
+      <div class="vehicle-selector-wrapper">
+        <div class="vehicle-tabs">
+          <button class="vehicle-tab active" data-type="sedan" onclick="switchVehicle('sedan', this)">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Sedan / Hatchback</span>
+          </button>
+          <button class="vehicle-tab" data-type="suv" onclick="switchVehicle('suv', this)">
+            <i class="fa-solid fa-truck-pickup"></i>
+            <span>SUV / Crossover</span>
+          </button>
+          <button class="vehicle-tab" data-type="commercial" onclick="switchVehicle('commercial', this)">
+            <i class="fa-solid fa-van-shuttle"></i>
+            <span>Ticari / Minibüs</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Packages Cards -->
+      <div class="packages-grid">
+        <!-- Package 1: Standart Yıkama -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-name">Silver Express</h3>
+            <p class="package-subtitle">Düzenli periyodik bakım & hijyen</p>
+          </div>
+          <div class="package-price-box">
+            <div class="package-price" id="price-silver">400 ₺</div>
+            <div class="package-duration"><i class="fa-regular fa-clock"></i> Yaklaşık 45-60 Dakika</div>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> <span>pH Nötr Kar Köpüklü Ön Yıkama</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Çizik Önleyici Çift Kova Sistemi</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Jant & Lastik Temizliği + Parlatıcı</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>İç Süpürme & Paspas Temizliği</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Torpido ve Camların Silinmesi</span></li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> <span>Buharlı Koltuk Yıkama</span></li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> <span>Pasta Cila & Çizik Giderme</span></li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> <span>Nano Seramik Koruma</span></li>
+          </ul>
+          <button class="btn btn-glass"
+            onclick="selectPackageBooking('Silver Express', document.getElementById('price-silver').innerText)">Paketi
+            Seç</button>
+        </div>
+
+        <!-- Package 2: Gold Detailing (Öne Çıkan) -->
+        <div class="package-card featured">
+          <div class="package-ribbon">EN ÇOK TERCİH EDİLEN</div>
+          <div class="package-header">
+            <h3 class="package-name">Gold Detailing Plus</h3>
+            <p class="package-subtitle">İç ve Dış Komple Sıfırlama Bakımı</p>
+          </div>
+          <div class="package-price-box">
+            <div class="package-price" id="price-gold">4.200 ₺</div>
+            <div class="package-duration"><i class="fa-regular fa-clock"></i> Yaklaşık 1 Tam Gün</div>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> <span>VIP Kar Köpüklü Detaylı Dış Yıkama</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Jant Demir Tozu & Kil Bar Temizliği</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>140°C Buharlı Koltuk, Tavan, Taban Yıkama</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Deri Koltuk Bakımı & Nemlendirme</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>1 Aşamalı Boya Düzeltme & Parlatma Cilası</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>6 Aylık Sıvı Hibrit Boya Koruma</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Ozonlu Araç İçi Sterilizasyon</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Motor Yıkama ve Plastik Koruma</span></li>
+          </ul>
+          <button class="btn btn-gold"
+            onclick="selectPackageBooking('Gold Detailing Plus', document.getElementById('price-gold').innerText)">Bu
+            Paketi Rezerve Et</button>
+        </div>
+
+        <!-- Package 3: Platinum VIP Seramik -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-name">Platinum VIP Seramik</h3>
+            <p class="package-subtitle">Kusursuz 9H Zırh ve Mücevher Parlaklığı</p>
+          </div>
+          <div class="package-price-box">
+            <div class="package-price" id="price-plat">8.500 ₺</div>
+            <div class="package-duration"><i class="fa-regular fa-clock"></i> 2 Gün (Kürleşme Süresi Dahil)</div>
+          </div>
+          <ul class="package-features">
+            <li><i class="fa-solid fa-check"></i> <span>Gold Paketin Tüm Kapsamlı İçeriği</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>3 Kademeli Kusursuz Boya Düzeltme (%98 Çizik Giderme)</span>
+            </li>
+            <li><i class="fa-solid fa-check"></i> <span>9H Çift Kat Gerçek Nano Seramik Kaplama</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>3 Yıl Yazılı Garanti Sertifikası</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Tüm Camlara Yağmur Kaydırıcı Seramik Kaplama</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>Jant & Kaliper Isıya Dayanıklı Seramik Koruma</span></li>
+            <li><i class="fa-solid fa-check"></i> <span>İlk 6 Ay Ücretsiz Kontrol Yıkaması</span></li>
+          </ul>
+          <button class="btn btn-glass"
+            onclick="selectPackageBooking('Platinum VIP Seramik', document.getElementById('price-plat').innerText)">VIP
+            Randevu Al</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-crown"></i> AYVEXORA FARKI</div>
+        <h2 class="section-title">Neden Bizi <span class="text-gold">Tercih Etmelisiniz?</span></h2>
+        <p class="section-desc">Biz sıradan bir oto yıkama değil, otomobil tutkusunu sanat ve bilimle birleştiren
+          detailing merkezimiziz.</p>
+      </div>
+
+      <div class="why-us-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+          <h3 class="why-title">Dünya Markası Ürünler</h3>
+          <p class="why-desc">Gyeon, Koch-Chemie ve Rupes gibi pH dengeli, boyaya asla zarar vermeyen sertifikalı ithal
+            kimyasallar kullanıyoruz.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-shield-virus"></i></div>
+          <h3 class="why-title">Çiziksiz Yıkama Garantisi</h3>
+          <p class="why-desc">Fırça veya ucuz sünger asla aracınıza temas etmez. Yalnızca ultra peluş mikrofiber yıkama
+            eldivenleri ve grit-guard kovalar.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3 class="why-title">VIP Bekleme Salonu</h3>
+          <p class="why-desc">Aracınız özenle yıkanırken yüksek hızlı Wi-Fi, taze filtre kahve ve klimalı konforlu
+            oturma alanımızda dinlenebilirsiniz.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3 class="why-title">Uluslararası Sertifika</h3>
+          <p class="why-desc">Teknisyenlerimiz IDA (International Detailing Association) standartlarında boya düzeltme
+            ve seramik uygulama sertifikalıdır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials -->
+  <section id="testimonials" style="background: rgba(14, 17, 24, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge"><i class="fa-solid fa-star"></i> MÜŞTERİ MEMNUNİYETİ</div>
+        <h2 class="section-title">Google'da <span class="text-gold">5.0 Yıldızlı</span> Yorumlarımız</h2>
+        <p class="section-desc">Bizi tercih eden araç sahiplerinin tarafsız deneyimleri ve geri bildirimleri.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">EK</div>
+              <div>
+                <div class="reviewer-name">Emre Korkmaz</div>
+                <div class="reviewer-car">BMW M4 Competition • Seramik Kaplama</div>
+              </div>
+            </div>
+          </div>
+          <div class="stars" style="margin-bottom: 14px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">"Aracımı teslim aldığımda bayiden yeni çıkmış gibiydi. Siyah renkteki kılcal
+            harelenmeler tamamen sıfırlandı. Ekibin ilgisi ve titizliği tek kelimeyle muazzam."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">SY</div>
+              <div>
+                <div class="reviewer-name">Serkan Yıldız</div>
+                <div class="reviewer-car">Mercedes G-Class • Detaylı İç Kuaför</div>
+              </div>
+            </div>
+          </div>
+          <div class="stars" style="margin-bottom: 14px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">"Açık renk deri koltuklardaki kot lekesi ve kirleri buharla tertemiz yaptılar. Ozon
+            sterilizasyonu sonrası arabanın içindeki o fabrika kokusu geri geldi. Teşekkürler Ayvexora!"</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">BD</div>
+              <div>
+                <div class="reviewer-name">Burak Demir</div>
+                <div class="reviewer-car">Porsche 911 GT3 • PPF & Düzenli Yıkama</div>
+              </div>
+            </div>
+          </div>
+          <div class="stars" style="margin-bottom: 14px;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">"Piyasadaki fırçalı yıkamalardan sonra burası bir vaha gibi. Çift kova yıkama
+            sistemleri ve kullandıkları şampuanlar harika. Arabasını seven herkesin tek adresi olmalı."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Appointment & Direct WhatsApp Booking Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <div class="section-badge"><i class="fa-brands fa-whatsapp"></i> KOLAY & ANINDA REZERVASYON</div>
+          <h3>Aracınız İçin Hemen <span class="text-gold">Randevu Oluşturun</span></h3>
+          <p>Sıra beklemeden VIP detailing hizmetimizden faydalanmak için formu doldurun veya WhatsApp hattımızdan
+            direkt bize yazın.</p>
+
+          <ul class="booking-perks">
+            <li><i class="fa-solid fa-circle-check"></i> Randevu saatinizde sıraya girmeden anında işlem</li>
+            <li><i class="fa-solid fa-circle-check"></i> İşlem öncesi ücretsiz boya mikron analizi</li>
+            <li><i class="fa-solid fa-circle-check"></i> VIP bekleme salonunda ücretsiz ikramlar</li>
+          </ul>
+
+          <div class="direct-contact-badge">
+            <div class="contact-badge-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="contact-badge-text">
+              <p>WhatsApp Doğrudan Destek Hattı:</p>
+              <strong>0506 036 28 62</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appointment Form that dispatches to WhatsApp -->
+        <div class="booking-form">
+          <form id="appointment-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="client-name">Adınız Soyadınız</label>
+                <input type="text" id="client-name" class="form-control" placeholder="Örn: Ahmet Yılmaz" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="client-phone">Telefon Numaranız</label>
+                <input type="tel" id="client-phone" class="form-control" placeholder="05XX XXX XX XX" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="car-brand">Araç Marka & Model</label>
+                <input type="text" id="car-brand" class="form-control" placeholder="Örn: Audi A6 2023" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="car-service">İstenen Hizmet</label>
+                <select id="car-service" class="form-control" required>
+                  <option value="9H Nano Seramik Kaplama">9H Nano Seramik Kaplama</option>
+                  <option value="Gold Detailing Plus">Gold Detailing Plus</option>
+                  <option value="Buharlı Detaylı İç Kuaför">Buharlı Detaylı İç Kuaför</option>
+                  <option value="Boya Düzeltme & Çizik Giderme">Boya Düzeltme & Çizik Giderme</option>
+                  <option value="Aktif Kar Köpüklü VIP Yıkama">Aktif Kar Köpüklü VIP Yıkama</option>
+                  <option value="PPF Şeffaf Boya Koruma Filmi">PPF Şeffaf Boya Koruma Filmi</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="booking-date">Tercih Edilen Tarih</label>
+                <input type="date" id="booking-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="booking-time">Tercih Edilen Saat</label>
+                <select id="booking-time" class="form-control" required>
+                  <option value="09:00 - 11:00">09:00 - 11:00 (Sabah)</option>
+                  <option value="11:30 - 13:30">11:30 - 13:30 (Öğle)</option>
+                  <option value="14:00 - 16:00">14:00 - 16:00 (Öğleden Sonra)</option>
+                  <option value="16:30 - 18:30">16:30 - 18:30 (Akşamüstü)</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="client-notes">Özel İstek veya Notlar (İsteğe Bağlı)</label>
+                <textarea id="client-notes" class="form-control" rows="2"
+                  placeholder="Örn: Deri koltuklarda leke var, ön kaputta taş izleri bulunuyor..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 16px; font-size: 1.05rem;"
+              id="submit-booking-btn">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i>
+              <span>WhatsApp İle Randevuyu Onayla & Gönder</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Community Strip -->
+      <div class="social-banner">
+        <div class="social-banner-left">
+          <h3 class="social-banner-title">Sosyal Medyada Bizi Takip Edin!</h3>
+          <p class="social-banner-desc">Günlük teslim edilen süper lüks araç videolarını, inanılmaz önce/sonra seramik
+            kaplama reels paylaşımlarını kaçırmayın.</p>
+        </div>
+        <div class="social-banner-btns">
+          <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-ig-gradient" id="banner-ig-btn">
+            <i class="fa-brands fa-instagram" style="font-size: 1.2rem;"></i>
+            <span>Instagram: ayvexora.web</span>
+          </a>
+          <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+            class="btn btn-tiktok-gradient" id="banner-tt-btn">
+            <i class="fa-brands fa-tiktok" style="font-size: 1.2rem;"></i>
+            <span>TikTok: ayvexora.web</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-col footer-brand">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">AYVEXORA <span>AUTO SPA</span></span>
+              <span class="logo-sub">PREMIUM DETAILING</span>
+            </div>
+          </div>
+          <p>
+            Otomobilinize hak ettiği değeri veren profesyonel nano seramik kaplama, çiziksiz köpüklü yıkama ve buharlı
+            iç hijyen merkezi.
+          </p>
+          <div class="social-btn-group">
+            <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+              class="social-circle-btn ig" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+              class="social-circle-btn tt" title="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://wa.me/905060362862" target="_blank" rel="noopener noreferrer" class="social-circle-btn wa"
+              title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h4>Hızlı Menü</h4>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Ana Sayfa</a></li>
+            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Hizmetlerimiz</a></li>
+            <li><a href="#comparison"><i class="fa-solid fa-angle-right"></i> Öncesi / Sonrası</a></li>
+            <li><a href="#packages"><i class="fa-solid fa-angle-right"></i> Fiyat Tarifeleri</a></li>
+            <li><a href="#why-us"><i class="fa-solid fa-angle-right"></i> Neden Biz?</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Online Randevu</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Çalışma Saatleri -->
+        <div class="footer-col">
+          <h4>Çalışma Saatleri</h4>
+          <ul class="footer-links" style="color: var(--text-muted); font-size: 0.9rem;">
+            <li style="margin-bottom: 10px;">
+              <strong style="color: var(--white); display: block;">Pazartesi - Cuma:</strong>
+              08:30 - 20:00
+            </li>
+            <li style="margin-bottom: 10px;">
+              <strong style="color: var(--white); display: block;">Cumartesi:</strong>
+              09:00 - 20:30
+            </li>
+            <li style="margin-bottom: 10px;">
+              <strong style="color: var(--white); display: block;">Pazar:</strong>
+              10:00 - 18:30
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: İletişim Detayları -->
+        <div class="footer-col">
+          <h4>İletişim & Konum</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--text-dim);">Telefon & WhatsApp</div>
+              <a href="tel:05060362862" style="color: var(--white); font-weight: 700;">0506 036 28 62</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--text-dim);">Instagram Hesabı</div>
+              <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+                style="color: var(--white); font-weight: 600;">@ayvexora.web</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-tiktok"></i>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--text-dim);">TikTok Hesabı</div>
+              <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+                style="color: var(--white); font-weight: 600;">@ayvexora.web</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <div style="font-size: 0.78rem; color: var(--text-dim);">Stüdyo Adresi</div>
+              <span>Merkez Sanayi Sitesi, VIP Detailing Bulvarı No: 42</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year"></span> Ayvexora Auto Spa & Detailing. Tüm Hakları Saklıdır.
+        </div>
+        <div class="developer-credit">
+          <span>Web Tasarım & Yazılım:</span>
+          <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer">
+            <strong>Ayvexora Web Solutions</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Floating Action Dock (Always Visible) -->
+  <div class="floating-action-dock">
+    <!-- Instagram Bubble -->
+    <a href="https://www.instagram.com/ayvexora.web/" target="_blank" rel="noopener noreferrer"
+      class="floating-social-bubble ig" title="Instagram: @ayvexora.web">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <!-- TikTok Bubble -->
+    <a href="https://www.tiktok.com/@ayvexora.web" target="_blank" rel="noopener noreferrer"
+      class="floating-social-bubble tt" title="TikTok: @ayvexora.web">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <!-- Pulsing WhatsApp Button -->
+    <a href="https://wa.me/905060362862?text=Merhaba,%20oto%20y%C4%B1kama%20ve%20detailing%20i%C3%A7in%20randevu%20almak%20istiyorum."
+      target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" id="floating-wa">
+      <div class="whatsapp-radar"></div>
+      <i class="fa-brands fa-whatsapp" style="font-size: 1.4rem;"></i>
+      <span>WhatsApp Randevu (0506 036 28 62)</span>
+    </a>
+  </div>
+
+  <!-- Interactive Fast Booking Modal Window -->
+  <div class="modal-backdrop" id="booking-modal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Kapat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div class="logo-icon" style="margin: 0 auto 12px; width: 42px; height: 42px; font-size: 1.1rem;">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <h3 style="font-family: 'Syne', sans-serif; font-size: 1.6rem; color: #fff; margin-bottom: 6px;">Hızlı Randevu
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Seçtiğiniz hizmet için bilgilerinizi girin, WhatsApp
+          üzerinden anında onaylayalım.</p>
+      </div>
+
+      <form id="modal-form" onsubmit="handleModalSubmit(event)">
+        <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px;">
+          <div class="form-group">
+            <label class="form-label" for="modal-service-name">Hizmet / Paket</label>
+            <input type="text" id="modal-service-name" class="form-control" readonly
+              style="background: rgba(229,169,60,0.1); border-color: var(--border-gold); color: var(--gold-light); font-weight: 700;">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modal-name">Adınız Soyadınız</label>
+            <input type="text" id="modal-name" class="form-control" placeholder="Örn: Mehmet Can" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modal-car">Araç Markası & Modeli</label>
+            <input type="text" id="modal-car" class="form-control" placeholder="Örn: BMW 320i veya VW Golf" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modal-date">İstediğiniz Gün</label>
+            <input type="date" id="modal-date" class="form-control" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 14px;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+          <span>WhatsApp İle Gönder</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Interactions -->
+  <script>
+    // Set Current Year in Footer
+    document.getElementById('current-year').innerText = new Date().getFullYear();
+
+    // Default Date to Tomorrow in Inputs
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+    if (document.getElementById('booking-date')) {
+      document.getElementById('booking-date').value = tomorrowStr;
+      document.getElementById('booking-date').min = new Date().toISOString().split('T')[0];
+    }
+    if (document.getElementById('modal-date')) {
+      document.getElementById('modal-date').value = tomorrowStr;
+      document.getElementById('modal-date').min = new Date().toISOString().split('T')[0];
+    }
+
+    // Vehicle Type Pricing Matrices
+    const pricingData = {
+      sedan: {
+        silver: '400 ₺',
+        gold: '4.200 ₺',
+        plat: '8.500 ₺'
+      },
+      suv: {
+        silver: '550 ₺',
+        gold: '5.200 ₺',
+        plat: '10.500 ₺'
+      },
+      commercial: {
+        silver: '700 ₺',
+        gold: '6.500 ₺',
+        plat: '12.900 ₺'
+      }
+    };
+
+    function switchVehicle(type, tabElement) {
+      document.querySelectorAll('.vehicle-tab').forEach(t => t.classList.remove('active'));
+      tabElement.classList.add('active');
+
+      const data = pricingData[type];
+      if (data) {
+        document.getElementById('price-silver').innerText = data.silver;
+        document.getElementById('price-gold').innerText = data.gold;
+        document.getElementById('price-plat').innerText = data.plat;
+      }
+    }
+
+    // Modal Operations
+    const bookingModal = document.getElementById('booking-modal');
+    const modalServiceInput = document.getElementById('modal-service-name');
+
+    function openBookingModal(serviceName) {
+      modalServiceInput.value = serviceName || 'Özel Detailing Hizmeti';
+      bookingModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      bookingModal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target === bookingModal) {
+        closeBookingModal();
+      }
+    }
+
+    function selectPackageBooking(pkgName, price) {
+      openBookingModal(`${pkgName} (${price})`);
+    }
+
+    // WhatsApp Dispatch from Main Form
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value;
+      const phone = document.getElementById('client-phone').value;
+      const car = document.getElementById('car-brand').value;
+      const service = document.getElementById('car-service').value;
+      const date = document.getElementById('booking-date').value;
+      const time = document.getElementById('booking-time').value;
+      const notes = document.getElementById('client-notes').value || 'Yok';
+
+      const message = `*🚘 AYVEXORA AUTO SPA - YENİ RANDEVU TALEBİ* 🚘%0A%0A` +
+        `👤 *Müşteri:* ${encodeURIComponent(name)}%0A` +
+        `📞 *Telefon:* ${encodeURIComponent(phone)}%0A` +
+        `🚗 *Araç Modeli:* ${encodeURIComponent(car)}%0A` +
+        `✨ *İstenen Hizmet:* ${encodeURIComponent(service)}%0A` +
+        `📅 *Tarih:* ${encodeURIComponent(date)}%0A` +
+        `⏰ *Saat Dilimi:* ${encodeURIComponent(time)}%0A` +
+        `📝 *Notlar:* ${encodeURIComponent(notes)}%0A%0A` +
+        `_Bu mesaj web siteniz üzerinden oluşturulmuştur._`;
+
+      window.open(`https://wa.me/905060362862?text=${message}`, '_blank');
+    }
+
+    // WhatsApp Dispatch from Modal
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const service = document.getElementById('modal-service-name').value;
+      const name = document.getElementById('modal-name').value;
+      const car = document.getElementById('modal-car').value;
+      const date = document.getElementById('modal-date').value;
+
+      const message = `*🚘 AYVEXORA AUTO SPA - HIZLI REZERVASYON* 🚘%0A%0A` +
+        `✨ *Hizmet / Paket:* ${encodeURIComponent(service)}%0A` +
+        `👤 *Müşteri:* ${encodeURIComponent(name)}%0A` +
+        `🚗 *Araç:* ${encodeURIComponent(car)}%0A` +
+        `📅 *Tarih:* ${encodeURIComponent(date)}%0A%0A` +
+        `_Müsaitlik durumunu öğrenmek ve randevumu kesinleştirmek istiyorum._`;
+
+      closeBookingModal();
+      window.open(`https://wa.me/905060362862?text=${message}`, '_blank');
+    }
+
+    // Interactive Before & After Slider Logic
+    const container = document.getElementById('compare-container');
+    const overlay = document.getElementById('compare-overlay');
+    const handle = document.getElementById('slider-handle');
+
+    let isSliding = false;
+
+    function updateSlider(x) {
+      const rect = container.getBoundingClientRect();
+      let position = x - rect.left;
+      if (position < 0) position = 0;
+      if (position > rect.width) position = rect.width;
+
+      const percentage = (position / rect.width) * 100;
+      container.style.setProperty('--slider-pos', percentage + '%');
+    }
+
+    if (container) {
+      container.addEventListener('mousedown', (e) => {
+        isSliding = true;
+        updateSlider(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => {
+        isSliding = false;
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isSliding) return;
+        updateSlider(e.clientX);
+      });
+
+      // Touch events for mobile
+      container.addEventListener('touchstart', (e) => {
+        isSliding = true;
+        updateSlider(e.touches[0].clientX);
+      });
+
+      window.addEventListener('touchend', () => {
+        isSliding = false;
+      });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isSliding) return;
+        updateSlider(e.touches[0].clientX);
+      });
+    }
+
+    // Mobile Navbar Toggle
+    const mobileBtn = document.getElementById('mobile-toggle');
+    const navLinks = document.getElementById('nav-menu');
+
+    if (mobileBtn && navLinks) {
+      mobileBtn.addEventListener('click', () => {
+        const isFlex = navLinks.style.display === 'flex';
+        if (isFlex) {
+          navLinks.style.display = 'none';
+        } else {
+          navLinks.style.display = 'flex';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '80px';
+          navLinks.style.left = '0';
+          navLinks.style.width = '100%';
+          navLinks.style.background = 'rgba(8, 9, 12, 0.98)';
+          navLinks.style.padding = '24px';
+          navLinks.style.borderBottom = '1px solid var(--border-gold)';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
